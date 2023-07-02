@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import { Button, Box, Typography } from '@mui/material';
 import UserProfileForm from './UserProfileForm';
 
+
+
 const OnboardingPage = ({ goToHospitalSearch }) => {
   const [showUserProfileForm, setShowUserProfileForm] = useState(false);
 
   const handleCompleteOnboarding = () => {
     setShowUserProfileForm(true);
   };
+
+  
 
   return (
     <Box

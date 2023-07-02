@@ -4,6 +4,7 @@ import OnboardingPage from './OnboardingPage';
 import HospitalSearch from './HospitalSearch';
 import UserProfileForm from './UserProfileForm';
 
+
 function App() {
   const [showOnboarding, setShowOnboarding] = useState(true);
   const [showUserProfileForm, setShowUserProfileForm] = useState(false);
@@ -19,22 +20,24 @@ function App() {
   };
 
   return (
-    <div
-      className="App"
-      style={{
-      //  backgroundImage: `url(${process.env.PUBLIC_URL}/background.jpg)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      {showOnboarding && !showUserProfileForm && (
-        <OnboardingPage goToHospitalSearch={handleGoToHospitalSearch} />
-      )}
-      {!showOnboarding && !showUserProfileForm && (
-        <HospitalSearch goToUserProfileForm={handleGoToUserProfileForm} />
-      )}
-      {showUserProfileForm && <UserProfileForm />}
-    </div>
+   // <ThemeProvider theme={theme}>
+      <div
+        className="App"
+        style={{
+          //  backgroundImage: `url(${process.env.PUBLIC_URL}/background.jpg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {showOnboarding && !showUserProfileForm && (
+          <OnboardingPage goToHospitalSearch={handleGoToHospitalSearch} />
+        )}
+        {!showOnboarding && !showUserProfileForm && (
+          <HospitalSearch goToUserProfileForm={handleGoToUserProfileForm} />
+        )}
+        {showUserProfileForm && <UserProfileForm />}
+      </div>
+   // </ThemeProvider>
   );
 }
 

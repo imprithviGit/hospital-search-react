@@ -1,4 +1,4 @@
-# Getting Started with Hospital Search app
+Have done both the frotend tasks, used react and materialUI
 
 In the project directory, you can run:
 

@@ -2,7 +2,7 @@ Have done both the frotend tasks, used react and materialUI
 
 In the project directory, you can run:
 
-### `npm test`
+### `npm install`
 
 Installs the required dependencies and libraries locally.
 
